@@ -1,0 +1,47 @@
+<!--  Videos Wrapper Starts  -->
+<div class="videos-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-9">
+
+                <!--  Videos Inner Wrapper Starts  -->
+                <div class="videos-inner-wrapper">
+                    <h3><a href>{{video.url}}</a></h3>
+                    <video controls id="myVideo" autoplay="true" ng-click="playVideo($event, 'myVideo')" onplay="playVideo($event, 'myVideo')">
+                        <source src="{{video.url}}" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <ul class="list-inline icon-list">
+                        <li ng-class="{'active':video.showRating >= 1,'icon-list-item':video.showRatingFloat && video.showRating == 1}" ng-click="rateVideo(video._id, 1)"><i class="fa fa-star"></i></li>
+                        <li ng-class="{'active':video.showRating >= 2,'icon-list-item':video.showRatingFloat && video.showRating == 2}" ng-click="rateVideo(video._id, 2)"><i class="fa fa-star"></i></li>
+                        <li ng-class="{'active':video.showRating >= 3,'icon-list-item':video.showRatingFloat && video.showRating == 3}" ng-click="rateVideo(video._id, 3)"><i class="fa fa-star"></i></li>
+                        <li ng-class="{'active':video.showRating >= 4,'icon-list-item':video.showRatingFloat && video.showRating == 4}" ng-click="rateVideo(video._id, 4)"><i class="fa fa-star"></i></li>
+                        <li ng-class="{'active':video.showRating >= 5,'icon-list-item':video.showRatingFloat && video.showRating == 5}" ng-click="rateVideo(video._id, 5)"><i class="fa fa-star"></i></li>
+                    </ul>
+                    <p>{{video.description}}</p>
+                </div>
+                <!--  Videos Inner Wrapper Ends  -->
+
+            </div>
+            <div class="col-sm-3">
+                <!--  Videos Inner Wrapper Starts  -->
+                <div class="videos-inner-wrapper" ng-repeat="eachVideo in videos">
+                    <h3><a ui-sref="videoDetail({id:eachVideo._id})">{{eachVideo.url}}</a></h3>
+                    <video controls id="{{eachVideo._id}}" ng-click="playVideo($event, eachVideo._id)" onplay="playVideo($event, eachVideo._id)">
+                        <source src="{{eachVideo.url}}" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <ul class="list-inline icon-list">
+                        <li ng-class="{'active':eachVideo.showRating >= 1,'icon-list-item':eachVideo.showRatingFloat && eachVideo.showRating == 1}" ng-click="rateVideo(video._id, 1)"><i class="fa fa-star"></i></li>
+                        <li ng-class="{'active':eachVideo.showRating >= 2,'icon-list-item':eachVideo.showRatingFloat && eachVideo.showRating == 2}" ng-click="rateVideo(video._id, 2)"><i class="fa fa-star"></i></li>
+                        <li ng-class="{'active':eachVideo.showRating >= 3,'icon-list-item':eachVideo.showRatingFloat && eachVideo.showRating == 3}" ng-click="rateVideo(video._id, 3)"><i class="fa fa-star"></i></li>
+                        <li ng-class="{'active':eachVideo.showRating >= 4,'icon-list-item':eachVideo.showRatingFloat && eachVideo.showRating == 4}" ng-click="rateVideo(video._id, 4)"><i class="fa fa-star"></i></li>
+                        <li ng-class="{'active':eachVideo.showRating >= 5,'icon-list-item':eachVideo.showRatingFloat && eachVideo.showRating == 5}" ng-click="rateVideo(video._id, 5)"><i class="fa fa-star"></i></li>
+                    </ul>
+                    <p>{{eachVideo.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  Videos Wrapper Ends  -->

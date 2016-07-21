@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+/* 
+    Created on : 20 Jul, 2016, 10:23:19 AM
+*/
+
+/*==============================================================================
+*****************        Import All  SCSS Files For The Site    ****************
+==============================================================================*/
+
+/*--  Import Bootstap  --*/
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+/*--  Import Custom Variable  --*/
+@import "variable.scss";
+
+/*--  Import Custom Mixin  --*/
+@import "mixin.scss";
+
+/*--  Import Common Styles  --*/
+@import "common.scss";
+
+/*--  Import Header Styles  --*/
+@import "header.scss";
+
+/*--  Import Login Styles  --*/
+@import "login.scss";
+
+/*--  Import videos Styles  --*/
+@import "videos.scss";
+
+/*--  Import Footer Styles  --*/
+@import "footer.scss";

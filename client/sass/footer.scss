@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Jul, 2016, 10:37:11 AM
+*/
+
+/*==============================================================================
+*****************        Footer Wrapper Styles For The Site    *****************
+==============================================================================*/
+.footer-wrapper{
+    background-color: $color-light-black2;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#33393E), to(#1C1F21));
+    background-image: -webkit-linear-gradient(top, #33393E, #1C1F21);
+    background-image: -moz-linear-gradient(top, #33393E, #1C1F21);
+    background-image: -o-linear-gradient(top, #33393E, #1C1F21);
+    background-image: linear-gradient(to bottom, #33393E, #1C1F21);
+    background-repeat: repeat-x;
+    border-color: $color-light-black2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: ($base-height *2.5);
+    .copy-right-text{
+        font-size: ($font-size-base - 1);
+        line-height: ($line-height-computed *2.5);
+        color: $color-white;
+        margin: 0;
+    }
+}

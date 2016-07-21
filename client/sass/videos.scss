@@ -1,0 +1,195 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Jul, 2016, 10:24:27 AM
+*/
+
+/*==============================================================================
+*****************        Videos Wrapper Styles For The Site    *****************
+==============================================================================*/
+.videos-wrapper{
+    @include padding(15px 0 0);
+    .row{
+        @include padding(0 7.5px);  
+        .col-sm-3,.col-sm-9{
+            @include padding(0 7.5px);
+        }
+    }
+    video{
+        width: 100%;
+        height: 210px;  
+        background-color: $color-black;
+    }
+
+    /*--  Videos Inner Wrapper Styles  --*/
+    .videos-inner-wrapper{ 
+        @include border-radius(5px);
+        @include margin(0 0 15px);
+        @include padding(15px);
+        background-color: $color-light-grey;
+        position: relative;
+        min-height: 445px;
+        border: 1px solid $color-light-grey2;      
+        h3{
+            @include margin(0 0 10px);
+            color: $color-light-black;
+            font-size: ($font-size-base + 2);
+            line-height: ($line-height-computed *.9);
+            text-transform: capitalize;
+            overflow: hidden;
+            width: 100%;
+            text-overflow: ellipsis;
+            a{
+                @include transition (all 0.3s ease-in-out);
+                color: $color-light-black;                
+                display: block;
+                white-space: nowrap;
+                text-overflow: ellipsis;  
+                overflow: hidden;
+                &:hover,&:focus{
+                    color: $color-light-red;
+                }
+            }
+        }
+
+        /*--  Icon List Styles  --*/
+        .icon-list{
+            @include margin(5px 0);
+            display: inline-block;
+            li{
+                @include transition (all 0.3s ease-in-out);
+                color: $color-light-grey1;
+                font-size: ($font-size-base + 6);
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                &:hover,&:hover ~ li,&:focus{
+                    color: $color-light-grey1;
+                }
+                &.active{
+                    color: $color-light-red;
+                    &:hover,&:focus{
+                        color: $color-light-red;
+                    }
+                }
+                &.icon-list-item{
+                    color: $color-light-red;
+                    i{
+                        &:before{
+                            color: $color-light-grey1;
+                        }
+                        &:after{
+                            color: $color-light-red;
+                            position: absolute;
+                            content: "";
+                            left: ($base-position *.2);
+                            width: ($base-width *.5);
+                            overflow: hidden;
+                        }
+                    }
+                    &:hover,&:focus{
+                        i{
+                            &:before{
+                                color: $color-light-red; 
+                            }
+                            &:after{
+                                color: $color-light-red;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover{
+                li{
+                    color: $color-light-red;
+                }
+            }
+        }
+        p{
+            @include margin(0 0 15px);
+            color: $color-light-black1;
+            font-size: ($font-size-base - 1);
+            height: ($base-height *3.5);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+            width: 100%;
+        }
+        .read-more{
+            font-size: ($font-size-base - 1);
+            color:  $color-light-red;
+            display: inline-block;
+            position: absolute;
+            right: ($base-position *.75);
+            bottom:($base-position *.75);
+        }
+
+    }
+
+    .col-sm-9{    
+        .videos-inner-wrapper{
+            min-height: 500px;
+            video{
+                height: 350px;
+            }
+        }
+    }
+    .col-sm-3{        
+        .videos-inner-wrapper{
+            min-height: 200px;
+            video{
+                height: 150px;
+            }
+            h3{
+                font-size: ($font-size-base + 1);
+            }
+            p{
+                font-size: ($font-size-base - 2);
+            }
+        }
+    }
+}
+
+/*===========================================================================
+******************      Media Styles For The Site          *********************
+==============================================================================*/
+
+@media (min-width: 992px) and (max-width :1199px) {
+
+}
+
+@media (min-width: 768px) and (max-width :991px) {
+    .videos-inner-wrapper{
+        h3{
+            font-size: $font-size-base;
+        }
+        p{
+            font-size: ($font-size-base - 2);
+        } 
+    }  
+}
+
+@media (min-width: 320px) and (max-width :767px) {
+    .navigation-wrapper{
+        .auth-link{
+            top:0;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width :480px) {
+    .navigation-wrapper{
+        h1{
+            @include margin(15px 0);
+            font-size: ($font-size-base + 4);
+        }
+    }
+    .form-wrapper{
+        .form-login{
+            width: ($base-width *12.5);
+        }
+    }
+}

@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Jul, 2016, 10:34:52 AM
+*/
+
+/*==============================================================================
+*******************        Custom Variables For The Site    ********************
+==============================================================================*/
+/*--  Fonts Variables  --*/
+$base-font-family            :'open-sans';
+
+/*--  Color Variables  --*/
+$color-white                 : #ffffff;
+$color-light-red             : #e62117;
+$color-black                 : #000000;
+$color-light-black           : #333333;
+$color-light-black1          : #444444;
+$color-light-black2          : #131516;
+$color-light-black3          : #252525;
+$color-light-grey            : #f5f5f5;
+$color-light-grey1           : #e4e4e4;
+$color-light-grey2           : #dddddd;
+$color-light-grey3           : #cccccc;
+$color-light-grey4           : #f6f6f6;
+$color-light-grey5           : #666666;
+$color-light-grey6           : #777777;
+$color-light-grey7           : #f6f6fe;
+$color-light-green           : #6da44c;
+$color-dark-green            : #528036;
+$color-light-blue            : #0081c1;
+
+/*--  Box Model  Variables  --*/
+$margin                      : '';
+$padding                     : '';
+$radius                      : '';
+$base-width                  : 20px;
+$base-height                 : 20px;
+$base-position               : 20px;

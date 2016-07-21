@@ -1,0 +1,129 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Jul, 2016, 10:42:15 AM
+*/
+
+/*==============================================================================
+*******************        Form Wrapper Styles For The Site    *****************
+==============================================================================*/
+.form-wrapper{
+    @include center-position();
+    @include padding(100px 0 0);
+    height: 100%;   
+    .logo-link{           
+        display: block;
+        width: ($base-width *10);
+        margin: 0 auto;
+    }
+    /*--  Form Login Wrapper Styles  --*/
+    .form-login-wrapper{  
+        @include border-radius(5px);    
+        @include margin(0 0 15px);
+        @include padding(15px);
+        background-color: $color-light-grey7;
+        width: 361px;    
+        border: 1px solid $color-light-grey2;
+        h3{  
+            @include margin(0 0 10px);
+            color: $color-light-black;
+            font-size: ($font-size-base * 1.5);
+            line-height: ($line-height-computed *1.05);
+            font-weight: bold;
+            .img-responsive{
+                display: inline-block;
+            }
+        }
+        .form-group {
+            .control-label{               
+                @include margin(0 0 5px);
+                color: $color-light-grey5;    
+                font-family: $base-font-family;
+                font-size: $font-size-base;
+                line-height: ($line-height-computed *.75);
+                font-weight: normal;
+                letter-spacing: 1px;              
+            }
+            .form-control{
+                @include border-radius(5px);
+                @include margin(0);
+                color: $color-light-grey5;
+                font-family: $base-font-family;
+                font-size: $font-size-base;
+                height: ($base-width *2);
+                border: 1px solid $color-light-grey3;                
+                &:focus{
+                    @include border-radius(5px);
+                    @include box-shadow(none);
+                    border: 1px solid $color-light-grey3;
+                }
+                &::-webkit-input-placeholder{
+                    font-family: $base-font-family;
+                    font-size: $font-size-base;
+                    color: $color-light-grey3;
+                    opacity: 1;  
+                }
+                &:-moz-placeholder{
+                    color: $color-light-grey3;
+                    font-family: $base-font-family;
+                    font-size: $font-size-base;
+                    opacity: 1; 
+                }
+                &::-moz-placeholder{
+                    color: $color-light-grey3;
+                    font-family: $base-font-family;
+                    font-size: $font-size-base;
+                    opacity: 1;   
+                }
+                &::-ms-input-placeholder{
+                    color: $color-light-grey3;
+                    font-family: $base-font-family;
+                    font-size: $font-size-base;
+                    opacity: 1; 
+                }
+            }
+        }
+        .btn-login{
+            @include padding(0);
+            background-color: $color-light-green;
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7bac5c), to(#528036));
+            background-image: -webkit-linear-gradient(top, #7bac5c, #528036);
+            background-image: -moz-linear-gradient(top, #7bac5c, #528036);
+            background-image: -o-linear-gradient(top, #7bac5c, #528036);
+            background-image: linear-gradient(to bottom, #7bac5c, #528036);
+            background-repeat: repeat-x;
+            border-color: #528036 #528036 #4b7632;
+            border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.45);
+            filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff7bac5c', endColorstr='#ff528036', GradientType=0);
+            filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+            color: $color-white;
+            font-family: $base-font-family;
+            font-size: $font-size-base;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35);
+            height: ($base-height *2);
+            line-height: ($line-height-computed *2);
+            &:hover,&:focus{
+                color: #ffffff;
+                background: $color-dark-green;
+            }
+        }
+    }
+    p{
+        @extend .text-center;
+        color: $color-light-grey6;
+        font-family: $base-font-family;
+        font-size: $font-size-base; 
+        font-weight: bold;
+        text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.6);
+    }
+    small{
+        @extend .text-center;
+        font-size: ($font-size-base - 2);  
+        display: block;
+    }
+}
+
+

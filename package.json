@@ -1,0 +1,43 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"node index.js\" \"karma start\" \"gulp\" ",
+    "preinstall": "npm i -g concurrency"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "body-parser": "^1.15.1",
+    "bootstrap": "^3.3.6",
+    "bootstrap-sass": "^3.3.6",
+    "detached-jquery-1.11.3": "^1.11.3",
+    "express": "^4.13.4",
+    "fontawesome": "^4.5.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.8",
+    "jquery": "^3.1.0",
+    "mongoose": "^4.4.20",
+    "morgan": "^1.7.0",
+    "npm-start": "^1.4.2",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.7",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.1",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "phantomjs-prebuilt": "^2.1.7"
+  }
+}

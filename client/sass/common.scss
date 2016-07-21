@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Jul, 2016, 10:24:17 AM
+*/
+
+/*==============================================================================
+********************     Fonts Family Styles For The Site   ********************
+==============================================================================*/
+
+/*--  Open Sans  --*/
+@font-face {
+    font-family:"open-sans";
+    src: url("../fonts/open-sans/open-sans.eot");
+    src: url("../fonts/open-sans/open-sans.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/open-sans/open-sans.woff") format("woff"),
+        url("../fonts/open-sans/open-sans.ttf") format("truetype"),
+        url("../fonts/open-sans/open-sans.svg#roboto-regular") format("svg"); 
+}
+
+/*==============================================================================
+**********************        Common Styles For The Site    ********************
+==============================================================================*/
+*{
+    outline: none !important;  
+}  
+a:hover,a:focus{
+    outline: none;  
+    text-decoration: none;
+}
+html{
+    position: relative;
+    min-height: 100%;
+} 
+body{
+    background-color: $color-light-grey4;
+    font-family: $base-font-family;
+    @include margin(0 0 50px); 
+}
+

@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Jul, 2016, 10:23:57 AM
+    Author     : AHXLAP025
+*/
+
+
+/*==============================================================================
+**********************        Header Styles For The Site    ********************
+==============================================================================*/
+
+/*--  Navigation Wrapper Styles  --*/
+.navigation-wrapper{
+    @include border-radius(0);
+    @include margin(0);
+    @include padding(0);
+    background-color: $color-light-black2;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#33393E), to(#1C1F21));
+    background-image: -webkit-linear-gradient(top, #33393E, #1C1F21);
+    background-image: -moz-linear-gradient(top, #33393E, #1C1F21);
+    background-image: -o-linear-gradient(top, #33393E, #1C1F21);
+    background-image: linear-gradient(to bottom, #33393E, #1C1F21);
+    background-repeat: repeat-x;
+    border-color: $color-light-black2;
+    position: relative;
+    border: 0;
+    h1{
+        @include margin(11px 0);
+        color: $color-white;
+        display: inline-block;
+        font-size: ($font-size-base + 11);
+    }
+    .dropdown-auth{
+        display: inline-block;
+        padding: 10px 0;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        .btn-auth{
+            background: transparent;
+            color: $color-white;
+            font-size: ($font-size-base *1.5);
+            padding: 0;
+            border: 0;
+            .img-responsive{
+                display: inline-block;   
+                width: 30px;
+            }
+            .caret{
+                border-top: 4px solid $color-white;
+            }
+        }
+        .dropdown-menu{
+            min-width: 100px;
+            margin: 0;
+            padding: 0;
+            top:50px;
+            left: auto;
+            right: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            &:before,&:after{
+                position: absolute;
+                content: "";
+                top: (-$base_position *.5);
+                right: 0;
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-bottom: 10px solid $color-light-grey6;
+                border-right: 10px solid transparent;
+                border-left: 10px solid transparent;   
+                border-top: 0;
+            }
+            &:after{
+                border-bottom: 10px solid $color_white; 
+            }
+            li{
+                a{
+                    font-size: 14px;
+                    &:hover{  
+                        background-color: $color-light-blue;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}

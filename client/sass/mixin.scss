@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Jul, 2016, 10:35:03 AM
+    Author     : AHXLAP025
+*/
+
+
+/*==============================================================================
+******************      Custom Mixins For The Site          ********************
+==============================================================================*/
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin center-position() {
+    @include translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+@mixin padding($padding) {
+    padding: $padding;
+}
+@mixin margin($margin) {
+    margin: $margin;
+}
+

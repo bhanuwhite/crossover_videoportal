@@ -1,0 +1,31 @@
+<!--  Form Wrapper Starts  -->
+<div class="form-wrapper">
+    <div class="alert alert-warning alert-dismissible" role="alert" ng-show="errormsg">
+        <button type="button" class="close" ng-click="closeError()"><span aria-hidden="true" >&times;</span></button>
+        {{errormsg}}
+    </div>
+
+    <a href="" class="logo-link">
+        <img class="img-responsive center-block" src="../images/logo.png" alt="logo" />
+    </a>
+
+    <!--  Form Login Wrapper Starts  -->
+    <form ng-submit="login()" class="form form-login-wrapper" name="myForm"> 
+        <div class="form-group">            
+            <h3><img class="img-responsive" src="../images/user-icon.png" alt="user-icon"/>Sign In</h3>
+        </div>
+        <div class="form-group">
+            <label for="inputUserName" class="control-label">Username</label>
+            <input type="text" class="form-control" id="inputUserName" placeholder="User Name" ng-model="username" required="true">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="control-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password" ng-model="password" required="true">
+        </div>
+        <button type="submit" ng-disabled="myForm.$invalid" class="btn btn-block btn-login">Sign in</button>
+    </form>
+    <!--  Form Login Wrapper Ends  -->
+    <p>Copyright © 2016 Crossover Video Portal</p>
+    <small>All rights reserved.</small>
+</div>
+<!--  Form Wrapper Ends  -->
